@@ -1,0 +1,82 @@
+name: rentpro
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=3.0.5 <4.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.2
+  get: ^4.6.6
+  flutter: 
+    sdk: flutter
+  flutter_screenutil: ^5.8.4
+  flag: ^7.0.0
+  palette_generator: ^0.3.3+2
+  feather_icons: ^1.2.0
+  iconly: ^1.0.1
+  unicons: ^2.1.1
+  flutter_typeahead: ^4.6.2
+  country_picker: ^2.0.20
+  dotted_border: ^2.0.0+3
+  image_picker: ^1.0.1
+  pinput: ^3.0.1
+  bootstrap_icons: ^1.10.5+2
+  dropdown_button2: ^2.3.5
+  material_design_icons_flutter: ^7.0.7296
+  intl: ^0.18.1
+  animated_text_kit: ^4.2.2
+  syncfusion_flutter_sliders: ^23.2.4
+  readmore: ^2.2.0
+  flutter_sticky_header: ^0.6.5
+  sticky_headers: ^0.3.0+2
+  sliver_tools: ^0.2.12
+  flutter_rating_bar: ^4.0.1
+  expansion_widget: ^0.0.3
+  get_storage: ^2.1.1
+  syncfusion_flutter_charts: ^23.2.4
+  fl_chart: ^0.64.0
+  
+
+dev_dependencies: 
+  flutter_lints: ^3.0.1
+  flutter_test: 
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/acnoo_assets/
+    - assets/images/acnoo_assets/custom_icons/
+    - assets/images/cities/
+    - assets/images/demo_images/
+    - assets/images/onboarding_images/
+
+  fonts:
+    - family: Lato
+      fonts:
+        - asset: assets/fonts/Lato/Lato-BlackItalic.ttf
+          style: italic
+          weight: 900
+        - asset: assets/fonts/Lato/Lato-Black.ttf
+          weight: 900
+        - asset: assets/fonts/Lato/Lato-BoldItalic.ttf
+          style: italic
+          weight: 700
+        - asset: assets/fonts/Lato/Lato-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Lato/Lato-Italic.ttf
+          style: italic
+          weight: 400
+        - asset: assets/fonts/Lato/Lato-LightItalic.ttf
+          style: italic
+          weight: 300
+        - asset: assets/fonts/Lato/Lato-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Lato/Lato-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Lato/Lato-ThinItalic.ttf
+          style: italic
+          weight: 100
+        - asset: assets/fonts/Lato/Lato-Thin.ttf
+          weight: 100

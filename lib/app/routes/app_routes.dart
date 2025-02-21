@@ -1,0 +1,84 @@
+part of 'app_pages.dart';
+// DO NOT EDIT. This is code generated via package:get_cli/get_cli.dart
+
+abstract class Routes {
+  Routes._();
+  static const HOME = _Paths.HOME;
+  static const SPLASH = _Paths.SPLASH;
+  static const LANGUAGE_SELECT = _Paths.LANGUAGE_SELECT;
+  static const ONBOARDING = _Paths.ONBOARDING;
+  static const WELCOME = _Paths.WELCOME;
+  static const LOGIN = _Paths.LOGIN;
+  static const SIGNUP = _Paths.SIGNUP;
+  static const SETUP_PROFILE = _Paths.SETUP_PROFILE;
+  static const FORGOT_PASSWORD = _Paths.FORGOT_PASSWORD;
+  static const VERIFICATION = _Paths.VERIFICATION;
+  static const NEW_PASSWORD = _Paths.NEW_PASSWORD;
+  static const CHOOSE_YOUR_CITY = _Paths.CHOOSE_YOUR_CITY;
+  static const HOME_SCREEN = _Paths.HOME_SCREEN;
+  static const FAVORITES = _Paths.FAVORITES;
+  static const DASHBOARD = _Paths.DASHBOARD;
+  static const CHATS = _Paths.CHATS;
+  static const USER_PROFILE = _Paths.USER_PROFILE;
+  static const ACNOO_SEARCH = _Paths.ACNOO_SEARCH;
+  static const ACNOO_SEARCH_RESULT = _Paths.ACNOO_SEARCH_RESULT;
+  static const PROPERTY_DETAILS = _Paths.PROPERTY_DETAILS;
+  static const PROPERTY_MAP = _Paths.PROPERTY_MAP;
+  static const APPLY_RENT = _Paths.APPLY_RENT;
+  static const EDIT_PROFILE = _Paths.EDIT_PROFILE;
+  static const NOTIFICATION = _Paths.NOTIFICATION;
+  static const TERMS_CONDITIONS = _Paths.TERMS_CONDITIONS;
+  static const ABOUT_US = _Paths.ABOUT_US;
+  static const CHAT_DETAILS = _Paths.CHAT_DETAILS;
+  static const APPLICATIONS = _Paths.APPLICATIONS;
+  static const SUBSCRIPTION = _Paths.SUBSCRIPTION;
+  static const APPLICATION_DETAILS = _Paths.APPLICATION_DETAILS;
+  static const NEWS_ARTICLE_LIST = _Paths.NEWS_ARTICLE_LIST;
+  static const NEWS_ARTICLE_DETAILS = _Paths.NEWS_ARTICLE_DETAILS;
+  static const RENT_PAYMENT = _Paths.RENT_PAYMENT;
+  static const OFFLINE_PAYMENT = _Paths.OFFLINE_PAYMENT;
+  static const UTILITY_PAYMENT = _Paths.UTILITY_PAYMENT;
+  static const MAINTENANCE_PAYMENT = _Paths.MAINTENANCE_PAYMENT;
+  static const REFUND_REQUEST = _Paths.REFUND_REQUEST;
+}
+
+abstract class _Paths {
+  _Paths._();
+  static const HOME = '/home';
+  static const SPLASH = '/splash';
+  static const LANGUAGE_SELECT = '/language-select';
+  static const ONBOARDING = '/onboarding';
+  static const WELCOME = '/welcome';
+  static const LOGIN = '/login';
+  static const SIGNUP = '/signup';
+  static const SETUP_PROFILE = '/setup-profile';
+  static const FORGOT_PASSWORD = '/forgot-password';
+  static const VERIFICATION = '/verification';
+  static const NEW_PASSWORD = '/new-password';
+  static const CHOOSE_YOUR_CITY = '/choose-your-city';
+  static const HOME_SCREEN = '/home-screen';
+  static const FAVORITES = '/favorites';
+  static const DASHBOARD = '/dashboard';
+  static const CHATS = '/chats';
+  static const USER_PROFILE = '/user-profile';
+  static const ACNOO_SEARCH = '/acnoo-search';
+  static const ACNOO_SEARCH_RESULT = '/acnoo-search-result';
+  static const PROPERTY_DETAILS = '/property-details';
+  static const PROPERTY_MAP = '/property-map';
+  static const APPLY_RENT = '/apply-rent';
+  static const EDIT_PROFILE = '/edit-profile';
+  static const NOTIFICATION = '/notification';
+  static const TERMS_CONDITIONS = '/terms-conditions';
+  static const ABOUT_US = '/about-us';
+  static const CHAT_DETAILS = '/chat-details';
+  static const APPLICATIONS = '/applications';
+  static const SUBSCRIPTION = '/subscription';
+  static const APPLICATION_DETAILS = '/application-details';
+  static const NEWS_ARTICLE_LIST = '/news-article-list';
+  static const NEWS_ARTICLE_DETAILS = '/news-article-details';
+  static const RENT_PAYMENT = '/rent-payment';
+  static const OFFLINE_PAYMENT = '/offline-payment';
+  static const UTILITY_PAYMENT = '/utility-payment';
+  static const MAINTENANCE_PAYMENT = '/maintenance-payment';
+  static const REFUND_REQUEST = '/refund-request';
+}
