@@ -2,15 +2,6 @@ import 'package:get/get.dart';
 
 class LanguageSelectController extends GetxController {
   bool isSettings = Get.arguments['settings'];
-  void handleNextButton() {
-    if (isSettings) {
-      //TODO:Save selected language when working with api
-      Get.back();
-    } else {
-      Get.offAllNamed('/onboarding');
-    }
-  }
-
   final List<AcnooLanguageModel> supportedLanguage = [
     AcnooLanguageModel(countryCode: 'US', languageName: 'English'),
     AcnooLanguageModel(countryCode: 'ES', languageName: 'Spanish'),
@@ -30,6 +21,15 @@ class LanguageSelectController extends GetxController {
   void onInit() {
     super.onInit();
     selectedLanguage = supportedLanguage.first.obs;
+  }
+
+  void handleNextButton() {
+    if (isSettings) {
+      //TODO:Save selected language when working with api
+      Get.back();
+    } else {
+      Get.offAllNamed('/onboarding');
+    }
   }
 }
 

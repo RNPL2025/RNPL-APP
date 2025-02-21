@@ -38,12 +38,12 @@ class HomeView extends GetView<HomeController> {
           appBar: controller.currentIndex == 0
               ? AppBar(
                   centerTitle: false,
-                  title: Text(
-                    'Rentpro',
-                    style: AcnooTextStyle.kHeading2
-                        .copyWith(color: AcnooAppColors.kWhite),
+                  title: Image.asset(
+                    'assets/images/acnoo_assets/rnpl_logo_slim.png',
+                    height: 38.h,
                   ),
-                  iconTheme: IconThemeData(color: AcnooAppColors.kWhite),
+                  // Comment out iconTheme to remove hamburger icon
+                  // iconTheme: IconThemeData(color: AcnooAppColors.kWhite),
                   actions: [
                     Padding(
                       padding: REdgeInsets.fromLTRB(0, 10, 12, 10),
@@ -62,7 +62,8 @@ class HomeView extends GetView<HomeController> {
                   ],
                 )
               : null,
-          drawer: SafeArea(child: HomeDrawer()),
+          // Comment out drawer
+          // drawer: SafeArea(child: HomeDrawer()),
           bottomNavigationBar: BottomNavigationBar(
             backgroundColor: AcnooAppColors.kWhite,
             currentIndex: controller.currentIndex.value,

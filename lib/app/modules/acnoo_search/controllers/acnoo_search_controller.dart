@@ -15,13 +15,13 @@ class AcnooSearchController extends GetxController {
     "Residential ",
   ];
   List<String> demoSearch = [
-    "Dhaka Dhanmondi",
-    "Dhaka Bonani",
-    "Dhaka Mirpur",
-    "Dhaka Gazipur",
-    "Gulshan 1",
-    "Gulshan 2",
-    "Kolkata Konnection",
+    "Chicago",
+    "Houston", 
+    "Los Angeles",
+    "New York City",
+    "Philadelphia",
+    "Phoenix",
+    "San Antonio",
   ];
 
   List<String> demoSuggestion(String query) {

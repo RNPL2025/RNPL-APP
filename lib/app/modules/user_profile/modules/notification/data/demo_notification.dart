@@ -2,7 +2,7 @@ class AcnooNotificationList {
   static List<AcnooNotificationModel> notificationList = [
     AcnooNotificationModel(
         title: 'Leslie Alexander',
-        msg: '“New Message”',
+        msg: '"New Message"',
         notiDate: DateTime.now().subtract(const Duration(minutes: 2))),
     AcnooNotificationModel(
         title: 'Arlene McCoy',

@@ -7,8 +7,7 @@ class SplashController extends GetxController {
     super.onInit();
     Future.delayed(
       Duration(milliseconds: 1800),
-      () => Get.offAllNamed('/language-select', arguments: {'settings': false}),
-      // () => Get.offAllNamed('/home'),
+      () => Get.offAllNamed('/welcome'),
     );
     AcnooCommonUtils.getColors();
   }

@@ -9,23 +9,23 @@ class HomeScreenController extends GetxController
   late TabController tabController;
 
   final favController = Get.put(FavoritesController());
-  RxString selectedCity = RxString('Dhaka');
+  RxString selectedCity = RxString('New York City');
   RxInt selectedTab = 0.obs;
   List<String> cityList = [
-    "Dhaka",
-    "Bhairab",
-    "Bogura",
-    "Brahmanbaria",
-    "Chowmuhani",
-    "Chandpur",
-    "Dinajpur",
-    "Faridpur",
-    "Feni",
-    "Jamalpur",
-    "Jashore	",
-    "Jhenaidah",
-    "Bandar",
-    "Kaliakair",
+    "Austin",
+    "Chicago",
+    "Columbus",
+    "Dallas",
+    "Fort Worth",
+    "Houston",
+    "Indianapolis",
+    "Jacksonville",
+    "Los Angeles",
+    "New York City",
+    "Philadelphia",
+    "Phoenix",
+    "San Antonio",
+    "San Diego",
   ];
 
   void addToFavList(AcnooPropertyModel property) {

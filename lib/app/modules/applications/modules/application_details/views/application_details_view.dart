@@ -310,7 +310,7 @@ class ApplicationDetailsView extends GetView<ApplicationDetailsController> {
                             child: Column(
                               children: [
                                 buildInfoRow(
-                                    title: 'Full Name', value: 'Shaidul islam'),
+                                    title: 'Full Name', value: 'John Doe'),
                                 buildInfoRow(
                                     title: 'Email',
                                     value: 'shaidslam1245@gmail.com'),
