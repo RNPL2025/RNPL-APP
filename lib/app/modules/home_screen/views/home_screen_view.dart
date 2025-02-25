@@ -111,34 +111,34 @@ class HomeScreenView extends GetView<HomeScreenController> {
             child: AcnooScaffoldContainer(
               topBar: Column(
                 children: [
-                  TabBar(
-                    controller: controller.tabController,
-                    labelColor: AcnooAppColors.kPrimaryColor700,
-                    unselectedLabelColor: AcnooAppColors.kNeutralColor500,
-                    indicator: BoxDecoration(
-                        color:
-                            AcnooAppColors.kPrimaryColor700.withOpacity(0.05),
-                        border: Border(
-                            bottom: BorderSide(
-                                color: AcnooAppColors.kPrimaryColor700,
-                                width: 1.5.w))),
-                    tabs: [
-                      Tab(
-                        child: Text(
-                          'Buy',
-                          style: AcnooTextStyle.kBodyMd
-                              .copyWith(fontWeight: FontWeight.w600),
-                        ),
-                      ),
-                      Tab(
-                        child: Text(
-                          'Rent',
-                          style: AcnooTextStyle.kBodyMd
-                              .copyWith(fontWeight: FontWeight.w600),
-                        ),
-                      ),
-                    ],
-                  ),
+                  // TabBar(
+                  //   controller: controller.tabController,
+                  //   labelColor: AcnooAppColors.kPrimaryColor700,
+                  //   unselectedLabelColor: AcnooAppColors.kNeutralColor500,
+                  //   indicator: BoxDecoration(
+                  //       color:
+                  //           AcnooAppColors.kPrimaryColor700.withOpacity(0.05),
+                  //       border: Border(
+                  //           bottom: BorderSide(
+                  //               color: AcnooAppColors.kPrimaryColor700,
+                  //               width: 1.5.w))),
+                  //   tabs: [
+                  //     Tab(
+                  //       child: Text(
+                  //         'Buy',
+                  //         style: AcnooTextStyle.kBodyMd
+                  //             .copyWith(fontWeight: FontWeight.w600),
+                  //       ),
+                  //     ),
+                  //     Tab(
+                  //       child: Text(
+                  //         'Rent',
+                  //         style: AcnooTextStyle.kBodyMd
+                  //             .copyWith(fontWeight: FontWeight.w600),
+                  //       ),
+                  //     ),
+                  //   ],
+                  // ),
                   Padding(
                     padding: REdgeInsets.fromLTRB(24, 16, 24, 12),
                     child: Obx(() => AnimatedSearchField(
