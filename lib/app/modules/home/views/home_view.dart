@@ -67,7 +67,13 @@ class HomeView extends GetView<HomeController> {
           bottomNavigationBar: BottomNavigationBar(
             backgroundColor: AcnooAppColors.kWhite,
             currentIndex: controller.currentIndex.value,
-            onTap: (value) => controller.changeIndex(value),
+            onTap: (value) {
+              final itemName = navItems.keys.toList()[value];
+              // Only allow Home and Favorites to be tapped
+              if (itemName != "Dashboard" && itemName != "Chats" && itemName != "Profile") {
+                controller.changeIndex(value);
+              }
+            },
             items: List.generate(navItems.length, (index) {
               final itemName = navItems.keys.toList()[index];
               final itemIcon = controller.currentIndex.value == index
@@ -87,9 +93,23 @@ class HomeView extends GetView<HomeController> {
                           ),
                         )
                       : null,
-                  child: Icon(itemIcon),
+                  child: Icon(
+                    itemIcon,
+                    // Add Chats and Profile to disabled items
+                    color: (itemName == "Dashboard" || 
+                           itemName == "Chats" || 
+                           itemName == "Profile")
+                        ? AcnooAppColors.kNeutralColor300
+                        : null,
+                  ),
                 ),
                 label: itemName,
+                // Add Chats and Profile to disabled items
+                backgroundColor: (itemName == "Dashboard" || 
+                                 itemName == "Chats" || 
+                                 itemName == "Profile")
+                    ? AcnooAppColors.kNeutralColor300
+                    : null,
               );
             }),
           ),

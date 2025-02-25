@@ -90,7 +90,6 @@ class AppPages {
         HomeBinding(),
         HomeScreenBinding(),
         FavoritesBinding(),
-        DashboardBinding(),
         ChatsBinding(),
         UserProfileBinding(),
       ],

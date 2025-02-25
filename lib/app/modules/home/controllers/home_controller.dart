@@ -13,7 +13,6 @@ class HomeController extends GetxController {
   final RxList<Widget> navBody = <Widget>[
     HomeScreenView(),
     FavoritesView(),
-    DashboardView(),
     ChatsView(),
     UserProfileView(),
   ].obs;
