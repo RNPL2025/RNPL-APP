@@ -89,21 +89,21 @@ class HomeScreenView extends GetView<HomeScreenController> {
                     ),
                   ],
                 ),
-                Container(
-                  height: 40.h,
-                  width: 125.w,
-                  padding: REdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                  alignment: Alignment.center,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(6),
-                      color: AcnooAppColors.kWhite.withOpacity(0.15)),
-                  child: Text(
-                    '+ Post Property',
-                    style: AcnooTextStyle.kBodySm.copyWith(
-                        fontWeight: FontWeight.bold,
-                        color: AcnooAppColors.kWhite),
-                  ),
-                )
+                // Container(
+                //   height: 40.h,
+                //   width: 125.w,
+                //   padding: REdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                //   alignment: Alignment.center,
+                //   decoration: BoxDecoration(
+                //       borderRadius: BorderRadius.circular(6),
+                //       color: AcnooAppColors.kWhite.withOpacity(0.15)),
+                //   child: Text(
+                //     '+ Post Property',
+                //     style: AcnooTextStyle.kBodySm.copyWith(
+                //         fontWeight: FontWeight.bold,
+                //         color: AcnooAppColors.kWhite),
+                //   ),
+                // )
               ],
             ),
           ),
