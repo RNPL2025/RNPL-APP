@@ -258,7 +258,7 @@ class ShapeChild extends GetView<HomeScreenController> {
                                                 ),
                                               ),
                                               TextSpan(
-                                                text: '  Search for rent',
+                                                text: '  New York',
                                                 style: AcnooTextStyle.kBodySm
                                                     .copyWith(
                                                   color: AcnooAppColors
@@ -270,7 +270,7 @@ class ShapeChild extends GetView<HomeScreenController> {
                                         ),
                                         RSizedBox(height: 8),
                                         Text(
-                                          'Rent, Delhi, India, any price, any area.',
+                                          'Williamsburg, Loft, \$4500',
                                           style: AcnooTextStyle.kCaption
                                               .copyWith(),
                                         ),
