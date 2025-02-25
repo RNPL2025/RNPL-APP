@@ -147,16 +147,18 @@ class HomeScreenView extends GetView<HomeScreenController> {
                             "selectedCity": controller.selectedCity,
                           }),
                           animatedTextList: [
-                            "Apartment",
-                            "House",
-                            "Land",
-                            "Room",
-                            "Commercial Property",
-                            "Studio",
-                            "Duplex",
+                           "Alcove Studio",
+                            "One Bedroom",
+                            "Two Bedroom",
+                            "Three Bedroom",
+                            "Spacious Loft"
+                            "Pet Friendly",
+                            "Parking Garage",
+                            "Fully Equipped",
+                            "Roof Deck",
                           ],
                           hintText: controller.selectedTab == 0
-                              ? 'Search buy for'
+                              ? 'Search rent for'
                               : 'Search rent for',
                         )),
                   ),
