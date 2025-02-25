@@ -206,7 +206,7 @@ class AcnooPropertyCard extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Rent for House',
+                            'Rent',
                             style: AcnooTextStyle.kCaption.copyWith(
                                 fontSize: 10.sp,
                                 color: AcnooAppColors.kNeutralColor500),
