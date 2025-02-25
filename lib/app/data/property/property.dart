@@ -4,33 +4,33 @@ class AcnooDemoProperties {
   static List<AcnooPropertyModel> properties = [
     AcnooPropertyModel(
       imageUrl: 'assets/images/demo_images/demo_room1.jpg',
-      title: '4 BHK Independent Builder floor',
-      price: 80000,
-      address: 'New Riends Coiony, New delhi',
+      title: 'Artist Loft',
+      price: 5500,
+      address: '123 3rd Avenue, New York',
       bedRooms: 2,
       bathRooms: 2,
-      flatArea: 3500,
-      ownerName: 'Shaidul Ismam',
+      flatArea: 800,
+      ownerName: 'Wright Realty Group',
       facilities: _generateRandomFacilities(),
       amenities: _generateRandomamenities(),
     ),
     AcnooPropertyModel(
       imageUrl: 'assets/images/demo_images/demo_room2.jpg',
-      title: '7 BHK Independent Builder floor',
-      price: 95000,
-      address: 'New Riends Coiony, New York',
+      title: 'Spacious 2 Bedroom',
+      price: 4250,
+      address: '24 Bedford Avenue, Brooklyn',
       bedRooms: 4,
       bathRooms: 5,
       flatArea: 3500,
-      ownerName: 'J. Cole',
+      ownerName: 'Newport Property Management',
       facilities: _generateRandomFacilities(),
       amenities: _generateRandomamenities(),
     ),
     AcnooPropertyModel(
       imageUrl: 'assets/images/demo_images/demo_room3.jpg',
-      title: '2 BHK Independent Builder floor',
-      price: 80000,
-      address: 'New Riends Coiony, Sacramento',
+      title: 'Sunny open plan studio',
+      price: 2550,
+      address: '55 33rd Street, New York',
       bedRooms: 2,
       bathRooms: 2,
       flatArea: 3500,
@@ -40,13 +40,13 @@ class AcnooDemoProperties {
     ),
     AcnooPropertyModel(
       imageUrl: 'assets/images/demo_images/demo_room4.jpg',
-      title: '2 BHK Independent Builder floor',
+      title: '428 31st Str, Astoria',
       price: 80000,
       address: 'New Riends Coiony, Sacramento',
       bedRooms: 2,
       bathRooms: 2,
       flatArea: 3500,
-      ownerName: 'Michael Jackson',
+      ownerName: 'RPPM LLC',
       facilities: _generateRandomFacilities(),
       amenities: _generateRandomamenities(),
     ),
@@ -58,26 +58,24 @@ Map<String, bool> _generateRandomFacilities() {
   final random = Random();
   return {
     "Parking": random.nextBool(),
-    "Security": random.nextBool(),
-    "Lift": random.nextBool(),
+    "Doorman": random.nextBool(),
     "Swimming Pool": random.nextBool(),
     "Playground": random.nextBool(),
-    "Gymnasium": random.nextBool(),
+    "Gym": random.nextBool(),
     "Sauna": random.nextBool(),
     "Barbeque area": random.nextBool(),
     "Minimart": random.nextBool(),
-    "Multipurpose hall": random.nextBool(),
+    "Roof Deck": random.nextBool(),
   };
 }
 
 Map<String, bool> _generateRandomamenities() {
   final random = Random();
   return {
-    "Air - Cond": random.nextBool(),
-    "Cooking Allowed": random.nextBool(),
-    "Near KTM/LRT": random.nextBool(),
-    "Washing Machine": random.nextBool(),
-    "Internet": random.nextBool(),
+    "Near Park": random.nextBool(),
+    "Near Subway": random.nextBool(),
+    "Washing/Dryer": random.nextBool(),
+    "Fireplace": random.nextBool(),
   };
 }
 
