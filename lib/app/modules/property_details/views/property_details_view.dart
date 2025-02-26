@@ -785,95 +785,15 @@ class PropertyDetailsView extends GetView<PropertyDetailsController> {
                                       .copyWith(fontWeight: FontWeight.w500),
                                 ),
                                 RSizedBox(height: 8),
-                                Row(
-                                  children: [
-                                    buildCheckRow(
-                                      title: controller.property.facilities.keys
-                                          .toList()[0],
-                                      value: controller
-                                          .property.facilities.values
-                                          .toList()[0],
-                                    ),
-                                    buildCheckRow(
-                                      title: controller.property.facilities.keys
-                                          .toList()[1],
-                                      value: controller
-                                          .property.facilities.values
-                                          .toList()[1],
-                                    )
-                                  ],
-                                ),
-                                Row(
-                                  children: [
-                                    buildCheckRow(
-                                        title: controller
-                                            .property.facilities.keys
-                                            .toList()[2],
-                                        value: controller
-                                            .property.facilities.values
-                                            .toList()[2]),
-                                    buildCheckRow(
-                                        title: controller
-                                            .property.facilities.keys
-                                            .toList()[3],
-                                        value: controller
-                                            .property.facilities.values
-                                            .toList()[3])
-                                  ],
-                                ),
-                                Row(
-                                  children: [
-                                    buildCheckRow(
-                                        title: controller
-                                            .property.facilities.keys
-                                            .toList()[4],
-                                        value: controller
-                                            .property.facilities.values
-                                            .toList()[4]),
-                                    buildCheckRow(
-                                        title: controller
-                                            .property.facilities.keys
-                                            .toList()[5],
-                                        value: controller
-                                            .property.facilities.values
-                                            .toList()[5])
-                                  ],
-                                ),
-                                Row(
-                                  children: [
-                                    buildCheckRow(
-                                        title: controller
-                                            .property.facilities.keys
-                                            .toList()[6],
-                                        value: controller
-                                            .property.facilities.values
-                                            .toList()[6]),
-                                    buildCheckRow(
-                                        title: controller
-                                            .property.facilities.keys
-                                            .toList()[7],
-                                        value: controller
-                                            .property.facilities.values
-                                            .toList()[7])
-                                  ],
-                                ),
-                                Row(
-                                  children: [
-                                    buildCheckRow(
-                                        title: controller
-                                            .property.facilities.keys
-                                            .toList()[8],
-                                        value: controller
-                                            .property.facilities.values
-                                            .toList()[8]),
-                                    buildCheckRow(
-                                        title: controller
-                                            .property.facilities.keys
-                                            .toList()[9],
-                                        value: controller
-                                            .property.facilities.values
-                                            .toList()[9])
-                                  ],
+                                Wrap(
+                                  spacing: 10,
+                                  runSpacing: 10,
+                                  children: controller.property.facilities.entries.map((facility) {
+                                    return buildCheckRow(
+                                      title: facility.key,
+                                      value: facility.value,
+                                    );
+                                  }).toList(),
                                 ),
                                 RSizedBox(height: 6),
 
@@ -884,47 +804,16 @@ class PropertyDetailsView extends GetView<PropertyDetailsController> {
                                       .copyWith(fontWeight: FontWeight.w500),
                                 ),
                                 RSizedBox(height: 6 + 2),
-                                Row(
-                                  children: [
-                                    buildCheckRow(
-                                        title: controller
-                                            .property.amenities.keys
-                                            .toList()[0],
-                                        value: controller
-                                            .property.amenities.values
-                                            .toList()[0]),
-                                    buildCheckRow(
-                                        title: controller
-                                            .property.amenities.keys
-                                            .toList()[1],
-                                        value: controller
-                                            .property.amenities.values
-                                            .toList()[1])
-                                  ],
+                                Wrap(
+                                  spacing: 10,
+                                  runSpacing: 10,
+                                  children: controller.property.amenities.entries.map((amenity) {
+                                    return buildCheckRow(
+                                      title: amenity.key,
+                                      value: amenity.value,
+                                    );
+                                  }).toList(),
                                 ),
-                                Row(
-                                  children: [
-                                    buildCheckRow(
-                                        title: controller
-                                            .property.amenities.keys
-                                            .toList()[2],
-                                        value: controller
-                                            .property.amenities.values
-                                            .toList()[2]),
-                                    buildCheckRow(
-                                        title: controller
-                                            .property.amenities.keys
-                                            .toList()[3],
-                                        value: controller
-                                            .property.amenities.values
-                                            .toList()[3])
-                                  ],
-                                ),
-                                buildCheckRow(
-                                    title: controller.property.amenities.keys
-                                        .toList()[4],
-                                    value: controller.property.amenities.values
-                                        .toList()[4]),
                               ],
                             ),
 
