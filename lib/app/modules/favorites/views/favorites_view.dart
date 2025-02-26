@@ -18,83 +18,52 @@ class FavoritesView extends GetView<FavoritesController> {
         centerTitle: false,
       ),
       body: AcnooScaffoldContainer(
-        topBar: TabBar(
-          unselectedLabelColor: AcnooAppColors.kNeutralColor500,
-          labelColor: AcnooAppColors.kPrimaryColor700,
-          indicatorColor: AcnooAppColors.kPrimaryColor700,
-          controller: controller.tabController,
-          tabs: [
-            Tab(child: Text('All')),
-            Tab(child: Text('Buy')),
-            Tab(child: Text('Rent')),
-          ],
-        ),
-        child: TabBarView(
-          controller: controller.tabController,
-          children: [
-            AllTab(),
-            Center(
-              child: Text('No Data'),
-            ),
-            Center(
-              child: Text('No Data'),
-            ),
-          ],
+        child: Obx(
+          () => controller.favList.isEmpty
+              ? Center(
+                  child: Text('No Property Added'),
+                )
+              : ListView.builder(
+                  itemCount: controller.favList.length,
+                  itemBuilder: (context, index) => Padding(
+                    padding: REdgeInsets.symmetric(horizontal: 24, vertical: 16),
+                    child: AcnooPropertyCard(
+                        ontap: () => Get.toNamed('/property-details',
+                            arguments: {'property': controller.favList[index]}),
+                        favBtn: InkWell(
+                          onTap: () => showDialog(
+                            context: context,
+                            builder: (popupContext) =>
+                                removalPopup(controller.favList[index]),
+                          ),
+                          child: Container(
+                            height: 20.h,
+                            width: 20.h,
+                            alignment: Alignment.center,
+                            decoration: BoxDecoration(
+                                color: AcnooAppColors.kNeutralColor200,
+                                shape: BoxShape.circle),
+                            child: Icon(
+                              controller.favList.contains(controller.favList[index])
+                                  ? Icons.favorite
+                                  : Icons.favorite_outline,
+                              size: 14.sp,
+                              color: AcnooAppColors.kPrimaryColor700,
+                            ),
+                          ),
+                        ),
+                        propertyImage: controller.favList[index].imageUrl,
+                        rentPerMonth: controller.favList[index].price,
+                        title: controller.favList[index].title,
+                        address: controller.favList[index].address,
+                        bedRooms: controller.favList[index].bedRooms,
+                        bathRooms: controller.favList[index].bathRooms,
+                        flatArea: controller.favList[index].flatArea,
+                        landlordName: controller.favList[index].ownerName),
+                  ),
+                ),
         ),
       ),
-    );
-  }
-}
-
-class AllTab extends GetView<FavoritesController> {
-  const AllTab({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Obx(
-      () => controller.favList.isEmpty
-          ? Center(
-              child: Text('No Property Added'),
-            )
-          : ListView.builder(
-              itemCount: controller.favList.length,
-              itemBuilder: (context, index) => Padding(
-                padding: REdgeInsets.symmetric(horizontal: 24, vertical: 16),
-                child: AcnooPropertyCard(
-                    ontap: () => Get.toNamed('/property-details',
-                        arguments: {'property': controller.favList[index]}),
-                    favBtn: InkWell(
-                      onTap: () => showDialog(
-                        context: context,
-                        builder: (popupContext) =>
-                            removalPopup(controller.favList[index]),
-                      ),
-                      child: Container(
-                        height: 20.h,
-                        width: 20.h,
-                        alignment: Alignment.center,
-                        decoration: BoxDecoration(
-                            color: AcnooAppColors.kNeutralColor200,
-                            shape: BoxShape.circle),
-                        child: Icon(
-                          controller.favList.contains(controller.favList[index])
-                              ? Icons.favorite
-                              : Icons.favorite_outline,
-                          size: 14.sp,
-                          color: AcnooAppColors.kPrimaryColor700,
-                        ),
-                      ),
-                    ),
-                    propertyImage: controller.favList[index].imageUrl,
-                    rentPerMonth: controller.favList[index].price,
-                    title: controller.favList[index].title,
-                    address: controller.favList[index].address,
-                    bedRooms: controller.favList[index].bedRooms,
-                    bathRooms: controller.favList[index].bathRooms,
-                    flatArea: controller.favList[index].flatArea,
-                    landlordName: controller.favList[index].ownerName),
-              ),
-            ),
     );
   }
 
